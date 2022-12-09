@@ -1,4 +1,3 @@
-hostname Router1
 int loopback 3
 ip address 3.3.3.3 255.255.255.255
 exit
