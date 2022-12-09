@@ -6,6 +6,10 @@ print(content)
 content = f.read(3)
 print(content)
 
+print(f.tell())
+
+f.seek(2)
+print(f.read(3))
 print(f.closed)
 
 f.close()
