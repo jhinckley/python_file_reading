@@ -9,7 +9,11 @@
     
 # print(mylist)
 
+
+# csv reader is faster
+
 import csv
+
 with open('devices.txt', 'r') as f:
     reader = csv.reader(f, delimiter=':')
     mylist = []
