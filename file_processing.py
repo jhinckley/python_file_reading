@@ -1,11 +1,17 @@
+# with open('devices.txt', 'r') as f:
+#     devices = f.read().splitlines()
+#     # print(devices)
+    
+# mylist = []
+# for item in devices:
+#     tmp = item.split(':')
+#     mylist.append(tmp)
+    
+# print(mylist)
+
+import csv
 with open('devices.txt', 'r') as f:
-    devices = f.read().splitlines()
-    # print(devices)
-    
-mylist = []
-for item in devices:
-    tmp = item.split(':')
-    mylist.append(tmp)
-    
-print(mylist)
-    
+    reader = csv.reader(f, delimiter=':')
+    mylist = []
+    for row in reader:
+        print(row)
